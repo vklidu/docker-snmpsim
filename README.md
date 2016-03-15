@@ -10,6 +10,6 @@ To use your own snmpwalks you should mount a folder with snmpwalks like this:
 
     docker run -v /somewhere/with/snmpwalks:/usr/share/snmpsim/data \
                -p 161:161/udp \
-               tandrup/private-bower
+               tandrup/snmpsim
 
 The filename determines the SNMP community name.
