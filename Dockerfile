@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN adduser --system snmpsim
 
+ADD data /usr/share/snmpsim/data
+
 EXPOSE 161/udp
 
 CMD snmpsimd --agent-udpv4-endpoint=0.0.0.0:161 --process-user=snmpsim --process-group=nogroup
