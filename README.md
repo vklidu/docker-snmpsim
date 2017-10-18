@@ -14,7 +14,7 @@ To use your own snmpwalks you should mount a folder with snmpwalks like this:
 
 The filename determines the SNMP community name.
 
-If you want to run snmpsimd with different flags then you can use `EXTRA_FLAGS`, like this:
+If you want to run snmpsimd with more flags then you can use `EXTRA_FLAGS`, like this:
 
     docker run -v /somewhere/with/snmpwalks:/usr/share/snmpsim/data \
                -p 161:161/udp \
