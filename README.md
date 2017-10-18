@@ -13,3 +13,10 @@ To use your own snmpwalks you should mount a folder with snmpwalks like this:
                tandrup/snmpsim
 
 The filename determines the SNMP community name.
+
+If you want to run snmpsimd with different flags then you can use `EXTRA_FLAGS`, like this:
+
+    docker run -v /somewhere/with/snmpwalks:/usr/share/snmpsim/data \
+               -p 161:161/udp \
+               -e EXTRA_FLAGS="--v3-user=testing --v3-auth-key=testing123"
+               tandrup/snmpsim
