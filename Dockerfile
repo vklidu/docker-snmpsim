@@ -1,6 +1,6 @@
 FROM python:3.4-slim
 
-RUN pip install snmpsim
+RUN pip install snmpsim==0.4.4
 
 RUN adduser --system snmpsim
 
